@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SW_7SEG.vf
+// /___/   /\     Timestamp : 04/24/2018 13:59:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog Z:/FPGA/Sw_7seg/SW_7SEG.vf -w Z:/FPGA/Sw_7seg/SW_7SEG.sch
+//Design Name: SW_7SEG
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SW_7SEG(SW0, 
+               SW1, 
+               A, 
+               B, 
+               C, 
+               D, 
+               Dp, 
+               E, 
+               F, 
+               G);
+
+    input SW0;
+    input SW1;
+   output A;
+   output B;
+   output C;
+   output D;
+   output Dp;
+   output E;
+   output F;
+   output G;
+   
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_73;
+   
+   AND2  XLXI_39 (.I0(SW1), 
+                 .I1(XLXN_73), 
+                 .O(D));
+   AND2  XLXI_40 (.I0(XLXN_51), 
+                 .I1(SW0), 
+                 .O(C));
+   AND2  XLXI_41 (.I0(SW1), 
+                 .I1(XLXN_73), 
+                 .O(A));
+   AND2  XLXI_42 (.I0(SW1), 
+                 .I1(SW0), 
+                 .O(XLXN_50));
+   INV  XLXI_43 (.I(XLXN_50), 
+                .O(F));
+   INV  XLXI_44 (.I(SW1), 
+                .O(XLXN_51));
+   INV  XLXI_45 (.I(SW0), 
+                .O(XLXN_73));
+   VCC  XLXI_49 (.P(Dp));
+   GND  XLXI_50 (.G(B));
+   INV  XLXI_51 (.I(SW0), 
+                .O(E));
+   INV  XLXI_52 (.I(XLXN_51), 
+                .O(G));
+endmodule

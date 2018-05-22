@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CNT2.vf
+// /___/   /\     Timestamp : 05/14/2018 08:56:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog Z:/FPGA/Cnt2/CNT2.vf -w Z:/FPGA/Cnt2/CNT2.sch
+//Design Name: CNT2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module CNT2(CLK, 
+            CARRY, 
+            SIGMA0, 
+            SIGMA1);
+
+    input CLK;
+   output CARRY;
+   output SIGMA0;
+   output SIGMA1;
+   
+   wire SIG;
+   wire XLXN_18;
+   wire XLXN_73;
+   wire XLXN_106;
+   wire XLXN_110;
+   
+   XOR2  XLXI_2 (.I0(SIG), 
+                .I1(XLXN_110), 
+                .O(XLXN_18));
+   FD #( .INIT(1'b0) ) XLXI_6 (.C(CLK), 
+              .D(XLXN_106), 
+              .Q(XLXN_110));
+   FD #( .INIT(1'b0) ) XLXI_7 (.C(CLK), 
+              .D(XLXN_18), 
+              .Q(SIG));
+   GND  XLXI_36 (.G(XLXN_73));
+   XOR2  XLXI_37 (.I0(XLXN_73), 
+                 .I1(XLXN_106), 
+                 .O(SIGMA0));
+   INV  XLXI_43 (.I(SIG), 
+                .O(SIGMA1));
+   NAND2  XLXI_44 (.I0(SIG), 
+                  .I1(XLXN_110), 
+                  .O(CARRY));
+   INV  XLXI_46 (.I(XLXN_110), 
+                .O(XLXN_106));
+endmodule

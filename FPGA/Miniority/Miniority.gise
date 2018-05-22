@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Miniority.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MINORITY.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="T_MINORITY.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="T_MINORITY.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_MINORITY.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="T_MINORITY.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="T_MINORITY.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_MINORITY_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_MINORITY_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_MINORITY_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="T_MINORITY_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="T_MINORITY_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1524450427" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1524450427">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450427" xil_pn:in_ck="4394716732444570738" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1524450427">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="T_MINORITY.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450427" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2218154116301626725" xil_pn:start_ts="1524450427">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450429" xil_pn:in_ck="4007282261929650599" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2900637367994212131" xil_pn:start_ts="1524450427">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MINORITY.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450429" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8793168508956909117" xil_pn:start_ts="1524450429">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450429" xil_pn:in_ck="-1004796189961649737" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1524450429">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MINORITY.vf"/>
+      <outfile xil_pn:name="T_MINORITY.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450432" xil_pn:in_ck="-1004796189961649737" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2984415900052150665" xil_pn:start_ts="1524450429">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="T_MINORITY_beh.prj"/>
+      <outfile xil_pn:name="T_MINORITY_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450432" xil_pn:in_ck="8364024782643355997" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4153655627899108053" xil_pn:start_ts="1524450432">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="T_MINORITY_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450161" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1524450161">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450163" xil_pn:in_ck="4007282261929650599" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2682857193842225891" xil_pn:start_ts="1524450161">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MINORITY.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450163" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8793168508956909117" xil_pn:start_ts="1524450163">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450163" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1524450163">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450163" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2218154116301626725" xil_pn:start_ts="1524450163">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450163" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5609353908614239355" xil_pn:start_ts="1524450163">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450163" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7202932550361075" xil_pn:start_ts="1524450163">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450168" xil_pn:in_ck="-1004796189961649737" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4230382428149874318" xil_pn:start_ts="1524450163">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="T_MINORITY.lso"/>
+      <outfile xil_pn:name="T_MINORITY.prj"/>
+      <outfile xil_pn:name="T_MINORITY.syr"/>
+      <outfile xil_pn:name="T_MINORITY.xst"/>
+      <outfile xil_pn:name="T_MINORITY_beh.prj"/>
+      <outfile xil_pn:name="T_MINORITY_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1524450168" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8766481065316275344" xil_pn:start_ts="1524450168">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

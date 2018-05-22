@@ -1,0 +1,6 @@
+--cpu Cortex-M3
+".\objects\asm02.o"
+--strict --scatter ".\Objects\asm02.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\asm02.map" -o .\Objects\asm02.axf

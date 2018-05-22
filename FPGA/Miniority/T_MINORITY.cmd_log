@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Z:/FPGA/Miniority/T_MINORITY.xst" -ofn "Z:/FPGA/Miniority/T_MINORITY.syr" 
